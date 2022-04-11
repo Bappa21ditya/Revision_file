@@ -1,0 +1,39 @@
+#include <bits/stdc++.h>
+using namespace std;
+//single inheritance 
+// a ->b;
+// paretnt class
+class parent{
+    public:
+    void sum() // function with arguments
+    {
+        cout<<"this is c++"<<endl;
+    }
+    void f(int b)
+    {
+        cout<<b<<endl;
+    }
+};
+// child class
+class child:public parent{
+    public:
+    void sum()
+    {
+        cout<<"this is java \n";
+    }
+};
+int main()
+{   
+    // int *a;
+    // char *b;
+    // int *a;
+    // int c=5;
+    // a=&c;
+    
+     parent *p1;
+      child c1;
+      p1=&c1;
+     p1->sum();
+//   a1.f(4);
+    return 0;
+}
