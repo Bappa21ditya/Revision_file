@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+// global variable
+int b=10;
+void sum()
+{
+    // local variable
+//   int  a=10; 
+   static int c=20;   // c=30
+    
+   c=c+5; // a=20+5=25  30+5=35
+   cout<<c<<endl;  //35
+   // 25+5=30;
+   c=c+5;
+//   cout<<b<<endl;
+}
+int main() {
+	// your code goes here
+	sum();
+ 	sum();
+// 	cout<<b<<endl;
+	return 0;
+}
