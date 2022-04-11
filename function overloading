@@ -1,0 +1,23 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+class a{
+    public:
+    // void,int return type, sum-functon name
+    void sum(int a,int b) //arguments
+    {
+        cout<<a+b<<endl;
+    }
+    void sum(int e ,double f)
+    {
+        cout<<e+f<<endl;
+    }
+    
+};
+int main()
+{                                             
+   a a1;
+   a1.sum(2,5);
+   a1.sum(5,7);
+    return 0;
+}
